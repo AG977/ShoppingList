@@ -2,7 +2,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 //import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
-//import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
+//import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage'; Angelique
 
 
 
