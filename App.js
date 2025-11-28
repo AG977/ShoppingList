@@ -1,8 +1,8 @@
 // import react Navigation
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
-//import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage'; 
+import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage'; 
+import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
 
 
 
@@ -52,9 +52,9 @@ const App = () => {
   
   //const analytics = getAnalytics(app);
 
-  //const auth = initializeAuth(app, {
-    //persistence: getReactNativePersistence(ReactNativeAsyncStorage)
-    //});
+  const auth = initializeAuth(app, {
+    persistence: getReactNativePersistence(ReactNativeAsyncStorage)
+    });
 
   // Initialize Cloud Firestore and get a reference to the service
   const db = getFirestore(app);
