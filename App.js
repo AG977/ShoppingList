@@ -52,9 +52,9 @@ const App = () => {
   
   //const analytics = getAnalytics(app);
 
-  const auth = initializeAuth(app, {
-    persistence: getReactNativePersistence(ReactNativeAsyncStorage)
-    });
+  //const auth = initializeAuth(app, {
+    //persistence: getReactNativePersistence(ReactNativeAsyncStorage)
+    //});
 
   // Initialize Cloud Firestore and get a reference to the service
   const db = getFirestore(app);
